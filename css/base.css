@@ -1,6 +1,5 @@
 /* =================================================================== 
  *
- *  Epitome Base Stylesheet
  *  Template Ver. 1.0.0
  *  04-22-2019
  *  ------------------------------------------------------------------
@@ -1222,58 +1221,6 @@ textarea {
 
 
 
-/* ===================================================================
- * # MISC
- *
- * ------------------------------------------------------------------- */
-.group:after {
-	content: "";
-	display: table;
-	clear: both;
-}
-
-/* misc helper classes
- * -------------------------------------- */
-.is-hidden {
-	display: none;
-}
-
-.is-invisible {
-	visibility: hidden;
-}
-
-.antialiased {
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
-.overflow-hidden {
-	overflow: hidden;
-}
-
-.remove-bottom {
-	margin-bottom: 0;
-}
-
-.half-bottom {
-	margin-bottom: 1.6rem !important;
-}
-
-.add-bottom {
-	margin-bottom: 3.2rem !important;
-}
-
-.no-border {
-	border: none;
-}
-
-.full-width {
-	width: 100%;
-}
-
-.text-center {
-	text-align: center;
-}
 
 .text-left {
 	text-align: left;
