@@ -16,6 +16,16 @@
     <meta name="twitter:title" content="Carson Carpenter - Python Programmer & Data Scientist">
     <meta name="twitter:description" content="Computer Science graduate specializing in data analytics and Python development.">
 
+    <!-- Preload critical fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i&display=swap">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,600,700&display=swap">
+    </noscript>
+
     <!-- mobile specific metas
     ================================================== -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -31,6 +41,35 @@
     <script src="js/modernizr.js"></script>
     <script src="js/pace.min.js"></script>
 
+    <!-- Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Carson Carpenter",
+        "jobTitle": "Python Programmer and Data Scientist",
+        "description": "Computer Science graduate specializing in data analytics, machine learning, and web development",
+        "url": "https://carsoncarpenter.dev",
+        "email": "carsoncarpenter77@gmail.com",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "California State University, Fullerton"
+        },
+        "knowsAbout": [
+            "Python Programming",
+            "Data Science",
+            "Machine Learning",
+            "Web Development",
+            "Database Design",
+            "Algorithm Engineering"
+        ],
+        "sameAs": [
+            "https://www.linkedin.com/in/carson-carpenter/",
+            "https://github.com/carsoncarpenter7"
+        ]
+    }
+    </script>
+
     <!-- favicons
     ================================================== -->
     <!-- <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
@@ -42,13 +81,16 @@
 
 <body id="top">
 
+    <!-- Skip to main content for accessibility -->
+    <a href="#intro" class="skip-link">Skip to main content</a>
+
     <div id="preloader">
         <div id="loader"></div>
     </div>
 
     <!-- site header
     ================================================== -->
-    <header class="s-header">
+    <header class="s-header" role="banner">
 <!-- 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
@@ -56,8 +98,8 @@
             </a>
         </div> -->
 
-        <nav class="header-nav-wrap">
-            <ul class="header-main-nav">
+        <nav class="header-nav-wrap" role="navigation" aria-label="Main navigation">
+            <ul class="header-main-nav" role="menubar">
                 <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
                 <li><a class="smoothscroll" href="#about" title="about">Work and Experience</a></li>
                 <li><a class="smoothscroll" href="#works" title="works">Projects</a></li>
@@ -65,24 +107,26 @@
             </ul>
 
             <ul class="header-social">
-                <li><a href="#0"><i class="fab fa-Github-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-LinkedIn" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/carsoncarpenter7" aria-label="Visit Carson's GitHub profile" target="_blank" rel="noopener"><i class="fab fa-github" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/carson-carpenter/" aria-label="Visit Carson's LinkedIn profile" target="_blank" rel="noopener"><i class="fab fa-linkedin" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        <button class="header-menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+            <span>Menu</span>
+        </button>
 
     </header> <!-- end s-header -->
 
 
     <!-- intro
     ================================================== -->
-    <section id="intro" class="s-intro target-section">
+    <section id="intro" class="s-intro target-section" role="main">
 
         <div class="row intro-content">
 
             <div class="column large-9 mob-full intro-text">
-                <h3>Hello, I'm Carson Carpenter</h3>
+                <p class="intro-greeting">Hello, I'm Carson Carpenter</p>
                 <h1>
                     Python Programmer <br>
                     and Data Scientist <br>
@@ -91,7 +135,7 @@
             </div>
 
             <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
+                <a href="#about" class="intro-scroll-link smoothscroll" aria-label="Scroll down to learn more about Carson">
                     Scroll For More
                 </a>
             </div>
@@ -106,13 +150,13 @@
 
     <!-- about
     ================================================== -->
-    <section id="about" class="s-about target-section">
+    <section id="about" class="s-about target-section" role="region" aria-labelledby="about-heading">
 
         <div class="about-me">
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
-                    <h2 class="section-heading">About Me</h2>
+                    <h2 id="about-heading" class="section-heading">About Me</h2>
                 </div>
             </div>
 
@@ -159,7 +203,7 @@
                         <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
-                                <p class="timeline__timeframe">August 2018 - August 2022</p>
+                                <time class="timeline__timeframe" datetime="2018-08/2022-08">August 2018 - August 2022</time>
                                 <h3 class="item-title">California State University, Fullerton</h3>
                                 <h5>Bachelor's Degree in Computer Science</h5>
                             </div>
@@ -215,7 +259,7 @@
                         <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
-                                <p class="timeline__timeframe">February 2023 – Present</p>
+                                <time class="timeline__timeframe" datetime="2023-02/2025-01">February 2023 – Present</time>
                                 <h3 class="item-title">SYNLawn</h3>
                                 <h5>Sales and Operations Associate</h5>
                             </div>
@@ -231,7 +275,7 @@
                         <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
-                                <p class="timeline__timeframe">June 2022 – February 2023</p>
+                                <time class="timeline__timeframe" datetime="2022-06/2023-02">June 2022 – February 2023</time>
                                 <h3 class="item-title">Freelance</h3>
                                 <h5>Website Designer</h5>
                             </div>
@@ -247,7 +291,7 @@
                         <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
-                                <p class="timeline__timeframe">July 2021 – July 2023</p>
+                                <time class="timeline__timeframe" datetime="2021-07/2023-07">July 2021 – July 2023</time>
                                 <h3 class="item-title">Nordstrom</h3>
                                 <h5>Logistics Processor</h5>
                             </div>
@@ -264,7 +308,7 @@
                         <div class="timeline__block">
                             <div class="timeline__bullet"></div>
                             <div class="timeline__header">
-                                <p class="timeline__timeframe">Mar 2019 – Aug 2020</p>
+                                <time class="timeline__timeframe" datetime="2019-03/2020-08">Mar 2019 – Aug 2020</time>
                                 <h3 class="item-title">EcoWorkz inc.</h3>
                                 <h5>Support Associate and Marketing</h5>
                             </div>
@@ -393,11 +437,11 @@
 
     <!-- works
     ================================================== -->
-    <section id="works" class="s-works target-section">
+    <section id="works" class="s-works target-section" role="region" aria-labelledby="projects-heading">
 
         <div class="row heading-block heading-block--center" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading section-heading--centerbottom">Selected Projects</h2>
+                <h2 id="projects-heading" class="section-heading section-heading--centerbottom">Selected Projects</h2>
                 <p class="section-desc">
                     Explore my portfolio of academic and personal projects. Each project demonstrates different technical skills and problem-solving approaches.
                 </p>
@@ -409,7 +453,7 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CryptoPals-1-5" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CryptoPals-1-5" target="_blank" rel="noopener" aria-label="View Cryptopals Challenges project on GitHub">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Cryptopals Challenges</h3>
@@ -433,7 +477,7 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Algorithm-Engineering" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Algorithm-Engineering" target="_blank" rel="noopener" aria-label="View Algorithm Engineering project on GitHub">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Algorithm Engineering</h3>
@@ -457,7 +501,7 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/CS362-Calender-App/Cosmos" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/CS362-Calender-App/Cosmos" target="_blank" rel="noopener" aria-label="View Cosmos Calendar project on GitHub">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Cosmos Calendar</h3>
@@ -481,7 +525,7 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python" target="_blank" rel="noopener" aria-label="View Python Collection project on GitHub">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Python Collection</h3>
@@ -505,7 +549,7 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python-Game-Development" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python-Game-Development" target="_blank" rel="noopener" aria-label="View Python Games project on GitHub">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Python Games</h3>
@@ -529,7 +573,7 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CECS-Mobile-App-Dev" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CECS-Mobile-App-Dev" target="_blank" rel="noopener" aria-label="View Android Apps project on GitHub">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Android Apps</h3>
@@ -556,11 +600,11 @@
 
     <!-- contact
     ================================================== -->
-    <section id="contact" class="s-contact ss-dark target-section">
+    <section id="contact" class="s-contact ss-dark target-section" role="region" aria-labelledby="contact-heading">
 
         <div class="row heading-block" data-aos="fade-up">
             <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
+                <h2 id="contact-heading" class="section-heading">Get In Touch</h2>
             </div>
         </div>
 
@@ -572,7 +616,7 @@
 
                 <p class="section-desc">
                 I'm always excited to connect with fellow developers, potential collaborators, and industry professionals. Whether you have questions about my projects, want to discuss opportunities, or need technical consultation, I'd love to hear from you.
-                <a href="mailto:carsoncarpenter77@gmail.com">Email Me</a>
+                <a href="mailto:carsoncarpenter77@gmail.com" aria-label="Send email to Carson Carpenter">Email Me</a>
                 </p>
             </div>
         </div>
@@ -582,8 +626,8 @@
             <div class="column large-7 medium-full contact-social">
                 <h4>Social</h4>
                 <ul>
-                    <li><a href="https://www.linkedin.com/in/carson-carpenter/" title="LinkedIn">LinkedIn</a></li>
-                    <li><a href="https://github.com/carsoncarpenter7" title="Github">Github</a></li>
+                    <li><a href="https://www.linkedin.com/in/carson-carpenter/" title="Visit Carson's LinkedIn profile" target="_blank" rel="noopener">LinkedIn</a></li>
+                    <li><a href="https://github.com/carsoncarpenter7" title="Visit Carson's GitHub profile" target="_blank" rel="noopener">Github</a></li>
                 </ul>
             </div>
 
@@ -594,10 +638,10 @@
 
     <!-- footer
     ================================================== -->
-    <footer>
+    <footer role="contentinfo">
         <div class="row">           
             <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                <a class="smoothscroll" title="Back to Top" href="#top" aria-label="Return to top of page"></a>
             </div>
         </div>
     </footer>
