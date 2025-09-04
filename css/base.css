@@ -1,5 +1,6 @@
 /* =================================================================== 
  *
+ *  Epitome Base Stylesheet
  *  Template Ver. 1.0.0
  *  04-22-2019
  *  ------------------------------------------------------------------
@@ -27,7 +28,7 @@
  * # imports 
  *
  * ------------------------------------------------------------------- */
-@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500|Lora:400,400i,700,700i|Roboto:300,400,500,600,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Frank+Ruhl+Libre:400,500|Lora:400,400i,700,700i|Roboto:300,400,500,600,700");
 @import url("font-awesome/css/fontawesome-all.css");
 
 
@@ -1221,6 +1222,58 @@ textarea {
 
 
 
+/* ===================================================================
+ * # MISC
+ *
+ * ------------------------------------------------------------------- */
+.group:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* misc helper classes
+ * -------------------------------------- */
+.is-hidden {
+	display: none;
+}
+
+.is-invisible {
+	visibility: hidden;
+}
+
+.antialiased {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+.overflow-hidden {
+	overflow: hidden;
+}
+
+.remove-bottom {
+	margin-bottom: 0;
+}
+
+.half-bottom {
+	margin-bottom: 1.6rem !important;
+}
+
+.add-bottom {
+	margin-bottom: 3.2rem !important;
+}
+
+.no-border {
+	border: none;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
 
 .text-left {
 	text-align: left;
