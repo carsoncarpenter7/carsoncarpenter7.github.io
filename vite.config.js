@@ -7,6 +7,9 @@ export default defineConfig({
     assetsDir: 'assets',
     sourcemap: false
   },
+  css: {
+    devSourcemap: false
+  },
   server: {
     port: 3000
   }
