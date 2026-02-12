@@ -6,14 +6,14 @@
     ================================================== -->
     <meta charset="utf-8">
     <title>Carson</title>
-    <meta name="description" content="Carson Carpenter - Computer Science graduate and Python programmer specializing in data analytics, machine learning, and web development. View my portfolio of projects and experience.">
+    <meta name="description" content="Carson Carpenter - Developer and Data Analyst. Computer Science graduate specializing in data analytics, Python, and web development. View my portfolio of projects and experience.">
     <meta name="author" content="Carson Carpenter">
-    <meta name="keywords" content="Carson Carpenter, Python programmer, data scientist, computer science, web development, machine learning, data analytics">
-    <meta property="og:title" content="Carson Carpenter - Python Programmer & Data Scientist">
+    <meta name="keywords" content="Carson Carpenter, developer, data analyst, computer science, web development, Python, data analytics">
+    <meta property="og:title" content="Carson Carpenter - Developer & Data Analyst">
     <meta property="og:description" content="Computer Science graduate specializing in data analytics and Python development. Explore my portfolio of technical projects and professional experience.">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="Carson Carpenter - Python Programmer & Data Scientist">
+    <meta name="twitter:title" content="Carson Carpenter - Developer & Data Analyst">
     <meta name="twitter:description" content="Computer Science graduate specializing in data analytics and Python development.">
 
     <!-- mobile specific metas
@@ -42,6 +42,8 @@
 
 <body id="top">
 
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <div id="preloader">
         <div id="loader"></div>
     </div>
@@ -56,25 +58,26 @@
             </a>
         </div> -->
 
-        <nav class="header-nav-wrap">
+        <nav class="header-nav-wrap" id="header-nav" aria-label="Main">
             <ul class="header-main-nav">
                 <li class="current"><a class="smoothscroll" href="#intro" title="intro">Intro</a></li>
-                <li><a class="smoothscroll" href="#about" title="about">Work and Experience</a></li>
+                <li><a class="smoothscroll" href="#about-me" title="about me">About Me</a></li>
+                <li><a class="smoothscroll" href="#experience" title="work and experience">Work and Experience</a></li>
                 <li><a class="smoothscroll" href="#works" title="works">Projects</a></li>
-                <li><a class="smoothscroll" href="#contact" title="contact us"> Contact</a></li>	
+                <li><a class="smoothscroll" href="#contact" title="Contact">Contact</a></li>	
             </ul>
 
             <ul class="header-social">
-                <li><a href="#0"><i class="fab fa-Github-f" aria-hidden="true"></i></a></li>
-                <li><a href="#0"><i class="fab fa-LinkedIn" aria-hidden="true"></i></a></li>
+                <li><a href="https://github.com/carsoncarpenter7" title="GitHub" rel="noopener noreferrer" target="_blank"><i class="fab fa-Github-f" aria-hidden="true"></i></a></li>
+                <li><a href="https://www.linkedin.com/in/carson-carpenter/" title="LinkedIn" rel="noopener noreferrer" target="_blank"><i class="fab fa-LinkedIn" aria-hidden="true"></i></a></li>
             </ul>
         </nav>
 
-        <a class="header-menu-toggle" href="#"><span>Menu</span></a>
+        <a class="header-menu-toggle" href="#" aria-label="Open menu" aria-expanded="false" aria-controls="header-nav"><span>Menu</span></a>
 
     </header> <!-- end s-header -->
 
-
+    <main id="main-content">
     <!-- intro
     ================================================== -->
     <section id="intro" class="s-intro target-section">
@@ -84,15 +87,16 @@
             <div class="column large-9 mob-full intro-text">
                 <h3>Hello, I'm Carson Carpenter</h3>
                 <h1>
-                    Python Programmer <br>
-                    and Data Scientist <br>
-                  
+                    Developer & <br>
+                    Data Analyst <br>
                 </h1>
+                <a href="#works" class="btn btn--primary intro-cta smoothscroll" aria-label="View my projects">View my work</a>
             </div>
 
             <div class="intro-scroll">
-                <a href="#about" class="intro-scroll-link smoothscroll">
+                <a href="#about-me" class="intro-scroll-link smoothscroll" aria-label="Scroll to next section">
                     Scroll For More
+                    <span class="intro-scroll-chevron" aria-hidden="true"></span>
                 </a>
             </div>
 
@@ -106,9 +110,9 @@
 
     <!-- about
     ================================================== -->
-    <section id="about" class="s-about target-section">
+    <section id="about" class="s-about">
 
-        <div class="about-me">
+        <div id="about-me" class="about-me target-section">
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
@@ -119,11 +123,11 @@
             <div class="row about-me__content" data-aos="fade-up">
                 <div class="column large-full about-me__text">
                     <p class="lead">
-                    Hello, I'm Carson Carpenter. I'm a Computer Science graduate with a passion for data analytics. I solve real-world problems through data processing and analysis.
+                    Hello, I'm Carson Carpenter. I'm a Computer Science graduate with a passion for data analytics. I solve real-world problems through data processing and analysis, and I work with tools like Python, SQL, and Tableau to turn data into clear insights and better decisions.
                     </p>
 
                     <p>
-                    I enjoy watching baseball, playing soccer, and attending live music events. In my free time, I've developed expertise in personal finance and financial modeling. I use data processing to make informed investment decisions.
+                    I enjoy watching baseball and catching live music whenever I can. Off the clock, I build personal projects to streamline my productivity. Scripts, small apps, and automations that make day-to-day work smoother. I like putting data to use in practical ways, from dashboards and automation to smarter decisions, including in personal finance.
                     </p>
                 </div>
             </div>
@@ -133,13 +137,13 @@
                     <a href="#0" class="btn btn--stroke full-width">Hire Me</a>
                 </div> -->
                 <div class="column large-half tab-full" data-aos="fade-up">
-                    <a href="https://drive.google.com/file/d/1ADkoSEudhtjlxgtSpwixJx76-g6IR0GU/view?usp=sharing" class="btn btn--primary full-width" aria-label="Download Carson Carpenter's resume PDF">Download Resume</a>
+                    <a href="resume.pdf" class="btn btn--primary full-width" aria-label="Download Carson Carpenter's resume PDF" download>Download Resume</a>
                 </div>
             </div>
 
         </div> <!-- end about-me -->
 
-        <div class="about-experience">
+        <div id="experience" class="about-experience target-section">
 
             <div class="row heading-block" data-aos="fade-up">
                 <div class="column large-full">
@@ -217,13 +221,15 @@
                             <div class="timeline__header">
                                 <p class="timeline__timeframe">February 2023 – Present</p>
                                 <h3 class="item-title">SYNLawn</h3>
-                                <h5>Sales and Operations Associate</h5>
+                                <h5>Project Manager and Accounts Receivable</h5>
                             </div>
                             <div class="timeline__desc">
                                 <ul>
-                                    <li>Partner with Home Depot and Lowe's to drive customer acquisition and develop financing solutions across Washington State</li>
-                                    <li>Design and develop CRM systems with automated workflows that connect customers, internal teams, and accounting departments</li>
-                                    <li>Ensure IRS audit compliance by collaborating with Certified Public Accountants on accurate financial reporting</li>
+                                    <li>Coordinate and lead planning sessions for project development and execution</li>
+                                    <li>Conduct risk analysis to reduce unforeseen obstacles and costs to remain in budget</li>
+                                    <li>Create detailed schedule, project parameters, and budget expectations for the client and staff using CRM's</li>
+                                    <li>Assisted accounts receivable manager in billing, job set-up, and maintenance of job files including error checks in billing</li>
+                                    <li>Assisted CPAs in reviewing documents for errors or discrepancies during a WA DOR Audit</li>
                                 </ul>
                             </div>
                         </div>
@@ -409,7 +415,8 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CryptoPals-1-5" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CryptoPals-1-5" target="_blank" rel="noopener noreferrer" aria-label="Open Cryptopals Cryptography Challenges on GitHub in a new tab">
+                            <img src="images/projects/placeholder.svg" alt="Cryptopals Cryptography Challenges" class="folio-item__img">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Cryptopals Challenges</h3>
@@ -433,7 +440,8 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Algorithm-Engineering" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Algorithm-Engineering" target="_blank" rel="noopener noreferrer" aria-label="Open Advanced Algorithm Engineering on GitHub in a new tab">
+                            <img src="images/projects/placeholder.svg" alt="Advanced Algorithm Engineering" class="folio-item__img">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Algorithm Engineering</h3>
@@ -457,7 +465,8 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/CS362-Calender-App/Cosmos" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/CS362-Calender-App/Cosmos" target="_blank" rel="noopener noreferrer" aria-label="Open Cosmos Calendar on GitHub in a new tab">
+                            <img src="images/projects/placeholder.svg" alt="Cosmos Calendar" class="folio-item__img">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Cosmos Calendar</h3>
@@ -481,7 +490,8 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python" target="_blank" rel="noopener noreferrer" aria-label="Open Python Programming Collection on GitHub in a new tab">
+                            <img src="images/projects/placeholder.svg" alt="Python Programming Collection" class="folio-item__img">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Python Collection</h3>
@@ -505,7 +515,8 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python-Game-Development" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/Python-Game-Development" target="_blank" rel="noopener noreferrer" aria-label="Open Interactive Python Games on GitHub in a new tab">
+                            <img src="images/projects/placeholder.svg" alt="Interactive Python Games" class="folio-item__img">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Python Games</h3>
@@ -529,7 +540,8 @@
             <div class="column large-4 medium-6 tab-full" data-aos="fade-up">
                 <div class="folio-item">
                     <div class="folio-item__thumb">
-                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CECS-Mobile-App-Dev" target="_blank">
+                        <a class="folio-item__thumb-link" href="https://github.com/carsoncarpenter7/CECS-Mobile-App-Dev" target="_blank" rel="noopener noreferrer" aria-label="Open Android Mobile Applications on GitHub in a new tab">
+                            <img src="images/projects/placeholder.svg" alt="Android Mobile Applications" class="folio-item__img">
                             <div class="folio-item__overlay">
                                 <div class="folio-item__text">
                                     <h3 class="folio-item__title">Android Apps</h3>
@@ -558,46 +570,43 @@
     ================================================== -->
     <section id="contact" class="s-contact ss-dark target-section">
 
-        <div class="row heading-block" data-aos="fade-up">
-            <div class="column large-full">
-                <h2 class="section-heading">Get In Touch</h2>
-            </div>
-        </div>
-
-        <div class="row contact-main" data-aos="fade-up">
-            <div class="column small">
-                <p class="contact-email">
-                    <!-- <a href="mailto:#0">carsoncarpenter77@gmail.com</a> -->
-                </p>
-
-                <p class="section-desc">
-                I'm always excited to connect with fellow developers, potential collaborators, and industry professionals. Whether you have questions about my projects, want to discuss opportunities, or need technical consultation, I'd love to hear from you.
-                <a href="mailto:carsoncarpenter77@gmail.com">Email Me</a>
-                </p>
-            </div>
-        </div>
-
-        <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
-
-            <div class="column large-7 medium-full contact-social">
-                <h4>Social</h4>
-                <ul>
-                    <li><a href="https://www.linkedin.com/in/carson-carpenter/" title="LinkedIn">LinkedIn</a></li>
-                    <li><a href="https://github.com/carsoncarpenter7" title="Github">Github</a></li>
-                </ul>
+        <div class="contact-inner">
+            <div class="row heading-block" data-aos="fade-up">
+                <div class="column large-full">
+                    <h2 class="section-heading">Get In Touch</h2>
+                </div>
             </div>
 
-        </div> <!-- end contact-infos -->
+            <div class="row contact-main" data-aos="fade-up">
+                <div class="column large-full">
+                    <p class="contact-desc">
+                        I'm always excited to connect with fellow developers, potential collaborators, and industry professionals. Whether you have questions about my projects, want to discuss opportunities, or need technical consultation, I'd love to hear from you.
+                    </p>
+                    <a href="mailto:carsoncarpenter77@gmail.com" class="btn btn--stroke contact-cta">Email Me</a>
+                </div>
+            </div>
+
+            <div class="row contact-infos" data-aos="fade-up" data-aos-anchor=".contact-main">
+                <div class="column large-full contact-social">
+                    <span class="contact-social-label">Social</span>
+                    <ul class="contact-links">
+                        <li><a href="https://www.linkedin.com/in/carson-carpenter/" title="LinkedIn">LinkedIn</a></li>
+                        <li><a href="https://github.com/carsoncarpenter7" title="Github">Github</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div> <!-- end contact-inner -->
 
     </section> <!-- end s-contact -->
 
+    </main>
 
     <!-- footer
     ================================================== -->
     <footer>
         <div class="row">           
             <div class="ss-go-top">
-                <a class="smoothscroll" title="Back to Top" href="#top"></a>
+                <a class="smoothscroll" title="Back to top" href="#top" aria-label="Back to top"></a>
             </div>
         </div>
     </footer>

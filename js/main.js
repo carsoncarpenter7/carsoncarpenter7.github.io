@@ -75,8 +75,11 @@
         toggleButton.on('click', function(event){
             event.preventDefault();
 
+            var isOpen = toggleButton.hasClass('is-clicked');
             toggleButton.toggleClass('is-clicked');
             nav.slideToggle();
+            toggleButton.attr('aria-expanded', !isOpen);
+            toggleButton.attr('aria-label', isOpen ? 'Open menu' : 'Close menu');
         });
 
         if (toggleButton.is(':visible')) nav.addClass('mobile');
@@ -107,11 +110,13 @@
 
             handler: function(direction) {
 
-                var active_section;
+                var active_section = $(this.element);
 
-                active_section = $('section#' + this.element.id);
-
-                if (direction === "up") active_section = active_section.prevAll(".target-section").first();
+                if (direction === "up") {
+                    var all = $(".target-section");
+                    var idx = all.index(active_section);
+                    if (idx > 0) active_section = all.eq(idx - 1);
+                }
 
                 var active_link = $('.header-main-nav li a[href="#' + active_section.attr("id") + '"]');
 
@@ -255,14 +260,15 @@
    /* Animate On Scroll
     * ------------------------------------------------------ */
     var ssAOS = function() {
-        
+        var prefersReducedMotion = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
         AOS.init( {
             offset: 200,
             duration: 600,
             easing: 'ease-in-sine',
             delay: 300,
             once: true,
-            disable: 'mobile'
+            disable: prefersReducedMotion ? true : 'mobile'
         });
 
     };
